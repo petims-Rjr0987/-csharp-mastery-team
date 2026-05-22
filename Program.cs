@@ -1,3 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("notre premieur Jour pour csharp avec collaboration");
-Console.Write("Salut tout le monde");
+﻿string teamName ="Elite C# team";
+int Members= 3;
+
+Console.WriteLine($"Welcome to the {teamName}!");
+Console.WriteLine("bien vennue dans notre programme");
+Console.WriteLine($"We have {Members} members in our team.");
+
