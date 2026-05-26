@@ -1,8 +1,33 @@
 ﻿
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   string profession;
   string objectif;
   int nbprojectcreer;
   char reponse;
+  char reponse2;
 
   Console.WriteLine("Entrez votre profession :");
     profession = Console.ReadLine();
@@ -21,6 +46,17 @@
         Console.WriteLine("N ! Vous avez créé moins de projets.");
         return;
     }
-    
+    reponse2 = (profession == "Développeur" && objectif == "Maîtriser C#") ? 'O' : 'N';
+    if (reponse2 == 'O')    
+    {
+        Console.WriteLine("Félicitations ! Vous êtes un développeur qui souhaite maîtriser C#.");
+        return;
+    }
+    else
+    {
+        Console.WriteLine("N ! Votre profession ou votre objectif ne correspond pas aux critères.");
+        return;
+    }   
+
 
     
